@@ -4,11 +4,84 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>fruit burst</title>
-      <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" type="image/x-icon" href="./images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="m-4 p-4">
    <header>
-<p class="text-left">i am sumaiya</p>
+<nav>
+      <div class="navbar text-neutral-content bg-red-500 rounded-full">
+      <div class="navbar-star">
+        <div class="dropdown justify-center">
+          <ul tabindex="0" class="flex  justify-around between content- tracking-tighter">
+            <li>
+                  <a>Home</a></li>
+            <li><a>About us</a>
+            </li>
+            <li><a>Shop</a></li>
+            <li><a>AllFruits</a></li>
+          </ul>
+        </div>
+          <div class="flex">
+            <a><img src="./images/logo.png"></a> 
+            <h1 class="text-inherit">FruitsBurst</h1>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+      </div>
+      <div class="navbar-end">
+       <div class="flex flex-row justify-end form-control rounded-full">
+            <input type="text" placeholder="Search" class="input input-bordered w-10 md:w-auto" /> 
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg> 
+      </div>
+</nav>
+<section class="rounded border-x-2 px-0.5 mx-px my-1.5">
+     <div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img src="./images/banner1.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+    <img src="./images/banner2.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" class="carousel-item relative w-full">
+    <img src="./images/banner3.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" class="carousel-item relative w-full">
+    <img src="./images/banner4.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+<div class="mix-blend-overlay">
+      <div class="">
+    <h1>Exotic tastes at your
+          doorstep</h1>
+    <p>
+      We supply highly quality organic products
+    </p>
+    <div><button class="btn btn-error text-white">ShopNow</button>
+    </div>
+  </div>
+</div>
+</section>
+
    </header>
    <main></main>
    <footer></footer>   
